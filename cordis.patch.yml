@@ -1,0 +1,7 @@
+- insert:
+    - id: dsh-gpt-fast-local
+      name: dsh-gpt-fast-local
+      config:
+        provider: ""
+        baseURL: ""
+        models: []

@@ -1,0 +1,15 @@
+{
+  "name": "dsh-gpt-fast-local",
+  "version": "0.2.0",
+  "description": "Experimental scoped Fast mode integration for DeepSeek Harness",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "main": "./index.js",
+  "exports": { ".": "./index.js", "./client": "./client.js", "./package.json": "./package.json" },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": { "platform": "web", "immediately": true, "inject": [] }
+  },
+  "scripts": { "test": "node --test test.js intercept.test.js" }
+}
